@@ -3,7 +3,7 @@ package com.victor.agendadortarefas.bussines.dto
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.victor.agendadortarefas.infrastructure.enuns.StatusTaferaEnum;
+import com.victor.agendadortarefas.infrastructure.enuns.StatusTarefaEnum;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -18,10 +18,12 @@ public class TarefaDTO {
     private String id;
     private String nomeTarefa;
     private String descricao;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern ="dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataCriacao;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern ="dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataEvento;
     private String emailUsuario;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern ="dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataAlteracao;
-    private StatusTaferaEnum statusTaferaEnum;
+    private StatusTarefaEnum statusTaferaEnum;
 }
