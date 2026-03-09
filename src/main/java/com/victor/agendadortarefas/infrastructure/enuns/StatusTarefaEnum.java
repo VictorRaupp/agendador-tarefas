@@ -1,5 +1,5 @@
 package com.victor.agendadortarefas.infrastructure.enuns;
 
-public enum StatusTaferaEnum {
+public enum StatusTarefaEnum {
     PENDENTE,NOTIFICADO,CANCELADO
 }
