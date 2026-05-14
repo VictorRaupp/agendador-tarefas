@@ -2,7 +2,7 @@ package com.victor.agendadortarefas.infrastructure.security;
 
 
 import com.victor.agendadortarefas.bussines.dto.UsuarioDTO;
-import com.victor.agendadortarefas.infrastructure.security.client.UsuarioClient;
+import com.victor.agendadortarefas.infrastructure.client.UsuarioClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
